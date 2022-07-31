@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.c-img{
+ background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(/assets/images/image-product-mobile.jpg);
+}
