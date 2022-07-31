@@ -102,8 +102,17 @@ p, span {
 
 }
 
+.c-addCart:hover {
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;
+}
 
-@media screen and (min-width: 1024px) {
+.c-addCart:focus {
+    background-color: hsl(158, 36%, 20%);
+}
+
+
+@media screen and (min-width: 768px) {
     .c-card{
         flex-direction: row;
         width: 530px;
