@@ -1,12 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+}
+
+p, span {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.c-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.c-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 9px;
+
 }
 
 .c-img{
- background-color: white;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-color: hsl(158, 36%, 37%);
+    height: 245px;
+    background-size: cover;
     background-image: url(/assets/images/image-product-mobile.jpg);
+    border-radius: 9px 9px 0px 0px;
+
+}
+
+.c-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 23px;
+}
+
+.c-subtitle{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3em;
+    font-size: 0.8em;
+}
+
+.c-title{
+    color: hsl(212, 21%, 14%);
+    margin: 15px 0px;
+    line-height: 1em;
+}
+
+.description{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.c-prices{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    gap: 0px 15px;
+
+}
+
+.c-newPrice{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+
+}
+
+.c-oldPrice{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+.c-addCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 15px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px 0px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    border-radius: 9px;
+
+}
+
+
+@media screen and (min-width: 1024px) {
+    .c-card{
+        flex-direction: row;
+        width: 530px;
+
+    }
+
+    .c-img{
+        background-image: url(/assets/images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 250px;
+        height: 100%;
+        border-radius: 9px 0px 0px 9px;
+    }
 }
