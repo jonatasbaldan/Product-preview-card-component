@@ -111,8 +111,28 @@ p, span {
     background-color: hsl(158, 36%, 20%);
 }
 
+.c-footer{
+    margin: 9em 0em 1em 0em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px 0px;
+}
 
-@media screen and (min-width: 768px) {
+.c-footer__copyright{
+    font-size: 14px;
+    color: hsl(28, 7%, 51%);
+    text-align: center;
+}
+
+.c-footer__link{
+    text-decoration: none;
+    color: hsl(158, 33%, 42%);
+
+}
+
+@media screen and (min-width: 600px) {
     .c-card{
         flex-direction: row;
         width: 530px;
