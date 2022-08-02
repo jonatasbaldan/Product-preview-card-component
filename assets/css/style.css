@@ -34,7 +34,7 @@ p, span {
 
 }
 
-.c-img{
+.c-card__img{
     background-color: hsl(158, 36%, 37%);
     height: 245px;
     background-size: cover;
@@ -43,32 +43,32 @@ p, span {
 
 }
 
-.c-info {
+.c-card__info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 23px;
 }
 
-.c-subtitle{
+.c-card__subtitle{
     color: hsl(228, 12%, 48%);
     letter-spacing: 0.3em;
     font-size: 0.8em;
 }
 
-.c-title{
+.c-card__title{
     color: hsl(212, 21%, 14%);
     margin: 15px 0px;
     line-height: 1em;
 }
 
-.description{
+.c-card__description{
     color: hsl(228, 12%, 48%);
     font-size: 14px;
     line-height: 1.5em;
 }
 
-.c-prices{
+.c-card__prices{
     margin: 15px 0px;
     display: flex;
     align-items: center;
@@ -76,19 +76,19 @@ p, span {
 
 }
 
-.c-newPrice{
+.c-card__new-price{
     color: hsl(158, 36%, 37%);
     font-size: 2em;
 
 }
 
-.c-oldPrice{
+.c-card__old-price{
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
     font-size: 0.8em;
 }
 
-.c-addCart{
+.c-card__add-cart{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,12 +102,12 @@ p, span {
 
 }
 
-.c-addCart:hover {
-    background-color: hsl(158, 36%, 20%);
+.c-card__add-cart:hover {
+    background-color: hsl(158, 36%, 30%);
     cursor: pointer;
 }
 
-.c-addCart:focus {
+.c-card__add-cart:focus {
     background-color: hsl(158, 36%, 20%);
 }
 
@@ -119,7 +119,7 @@ p, span {
 
     }
 
-    .c-img{
+    .c-card__img{
         background-image: url(/assets/images/image-product-desktop.jpg);
         background-size: cover;
         background-repeat: no-repeat;
